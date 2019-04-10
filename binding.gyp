@@ -5,6 +5,6 @@
         "include_dirs": [
             "/usr/include/alsa"
         ],
-        "libraries": ["/usr/lib64/libasound.so"]
+        "libraries": ["/usr/lib/libasound.so"]
     }]
 }
