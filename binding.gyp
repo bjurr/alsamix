@@ -3,8 +3,10 @@
         "target_name": "alsamix",
         "sources": [ "./src/alsamix.c" ],
         "include_dirs": [
-            "/usr/include/alsa"
+            '<!@(pkg-config alsa --cflags-only-I | sed s/-I//g)'
         ],
-        "libraries": ["/usr/lib/libasound.so"]
+        "libraries": [
+            '<!@(pkg-config alsa --libs)'
+        ]
     }]
 }
