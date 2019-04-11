@@ -1,12 +1,12 @@
 {
-  "name": "node-alsamix",
+  "name": "alsamix",
   "version": "0.0.1",
-  "description": "Native alsa mixer bindings",
-  "repository": "bjurr/node-alsamix",
+  "description": "Native NodeJS alsa mixer bindings",
+  "repository": "bjurr/alsamix",
   "scripts": {
     "build": "node-gyp configure build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Dominique Bureau",
   "license": "MIT"
 }
