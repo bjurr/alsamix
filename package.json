@@ -2,11 +2,20 @@
   "name": "alsamix",
   "version": "0.0.1",
   "description": "Native NodeJS alsa mixer bindings",
+  "main": "index.js",
   "repository": "bjurr/alsamix",
+  "dependencies": {
+    "bindings": "~1.5.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.7.0"
+  },
   "scripts": {
-    "build": "node-gyp configure build",
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dominique Bureau",
-  "license": "MIT"
+  "license": "MIT",
+  "gypfile": true
 }
