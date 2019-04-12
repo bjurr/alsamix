@@ -2,20 +2,24 @@
   "name": "alsamix",
   "version": "0.0.1",
   "description": "Native NodeJS alsa mixer bindings",
+  "author": "Dominique Bureau <dbureau@gmail.com> (https://github.com/bjurr)",
+  "license": "MIT",
+  "homepage": "https://github.com/bjurr/alsamix",
   "main": "index.js",
-  "repository": "bjurr/alsamix",
+  "repository": "github:bjurr/alsamix",
   "dependencies": {
     "bindings": "~1.5.0"
   },
   "devDependencies": {
     "node-gyp": "^3.7.0"
   },
+  "os" : [ "linux" ],
   "scripts": {
     "build": "node-gyp rebuild",
+    "install": "node-gyp rebuild",
     "clean": "node-gyp clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dominique Bureau",
-  "license": "MIT",
-  "gypfile": true
+  "gypfile": true,
+  "keywords" : [ "alsa", "mixer", "alsa-mixer", "asound" ]
 }
